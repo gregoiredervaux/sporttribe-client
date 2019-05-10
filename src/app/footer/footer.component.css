@@ -1,0 +1,36 @@
+/**********************************
+************FOOTER*****************
+***********************************/
+
+footer {
+  font-family: "Helevtica", serif;
+  padding: 0 10vw 0 10vw;
+  border-top-style: solid;
+  border-color: darkgrey;
+  border-width: 1px;
+  box-shadow: 2px 2px 8px lightgrey;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .row {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+}
+
+footer h3{
+  font-size: 1rem;
+}
+
+footer ul span {
+  font-size: 0.75rem;
+}
+
+footer .social_network li {
+  margin-bottom: 5px;
+}
+
+footer ul .social_network:hover {
+  display: flex;
+}

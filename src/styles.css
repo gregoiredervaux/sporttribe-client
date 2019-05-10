@@ -1,0 +1,109 @@
+/*font*/
+
+
+@font-face {
+
+  font-family: "Helevtica";
+  src: url(/public/font/Helvetica.ttf)
+}
+
+
+/**********************************
+*************UTILS*****************
+***********************************/
+
+.hidden {
+  display: none;
+}
+
+.roundIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  background-color: #666666;
+  color: lightgrey;
+}
+
+
+/**********************************
+****************404****************
+***********************************/
+
+#404 img {
+  height: 20vh;
+}
+
+/**********************************
+************DEFAULT*****************
+***********************************/
+
+a {
+  text-decoration: none;
+  color: grey
+}
+
+li {
+  list-style-type: none;
+}
+
+.error{
+  background-color: lightcoral;
+  color: black;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('../img/sport/tennis.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+header, footer {
+  background-color: white;
+}
+
+/*titre*/
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+/*btn*/
+
+.classic_btn {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  text-shadow: rgb(68, 68, 68) 1px 1px 0;
+  color: black;
+  background-color: #3399ff;
+  border-radius: 4px;
+  border: 1px solid grey;
+  padding: 1em;
+  font-size: 0.8rem;
+}
+
+.classic_btn:hover {
+  transition-timing-function: ease-out;
+  transition: 0.2s;
+  background-color: #0066ff;
+}
+
+.selected-btn {
+  color: orange;
+}

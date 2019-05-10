@@ -1,0 +1,81 @@
+/**********************************
+**************GRID*****************
+***********************************/
+
+
+body {
+  display: grid;
+  grid-template: auto auto auto auto auto / 5vw 2fr 3fr 3fr 5vw;
+  grid-gap: 10px;
+  margin:0;
+}
+
+header {
+  grid-column: 1/6;
+  grid-row: 1/2;
+}
+
+.main{
+  grid-column: 1/6;
+  grid-row:2/3;
+}
+
+main {
+
+  grid-column: 1/6;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 40vh));
+  grid-auto-rows: 300px;
+}
+
+article {
+  background-color: aqua;
+}
+
+footer {
+  grid-column: 1/6;
+  grid-row: 4/5;
+}
+
+
+/* tab */
+@media screen  and (min-width:1024px) and (max-width: 1280px){
+
+  article:first-of-type {
+    grid-column: span 2;
+  }
+
+  article {
+    background-color: cadetblue;
+  }
+}
+
+
+
+/*computer*/
+@media screen  and (min-width:1280px) and (min-aspect-ratio:16/9){
+
+  nav [class=main]{
+    grid-column: 2/3;
+  }
+
+  main {
+    grid-column: 3/5;
+  }
+
+  article:first-of-type {
+    grid-column: span 2;
+  }
+
+  article {
+    background-color: lightblue;
+  }
+
+}
+
+/*Tv*/
+@media screen  and (min-width:1280px){
+
+}
+
