@@ -13,8 +13,8 @@ DOCTYPE html>
     <li>{{sport_icon}}</li>
   </ul>
 </nav>
-<main *ngFor="let BasicClasses of Events">
-  <app-event [Event]="BasicClasses"></app-event>
+<main *ngFor="let event of Events">
+  <app-event [Event]="event"></app-event>
 </main>
 
 <footer>

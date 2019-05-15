@@ -1,14 +1,31 @@
+import {Observable} from 'rxjs';
+
 export class Event {
-  id: number;
-  name: string;
-  sport: Sport;
-  date: string;
-  description: string;
-  location: Location;
-  players: Array<number>;
-  opened: boolean;
-  creator_id: number;
-  captain_id: number;
+    constructor(
+        id: number,
+        name: string,
+        sport: Observable<Sport>,
+        date: string,
+        description: string,
+        location: Observable<Location>,
+        players: Array<number>,
+        opened: boolean,
+        creator_id: number,
+        captain_id: number
+        ) {}
+}
+
+export class RawEvent {
+    id: number;
+    name: string;
+    sport: number;
+    date: string;
+    description: string;
+    location: number;
+    players: Array<number>;
+    opened: boolean;
+    creator_id: number;
+    captain_id: number;
 }
 
 export class Sport {

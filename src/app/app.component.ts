@@ -17,7 +17,7 @@ export class AppComponent {
     private indexService: IndexService) {}
 
   cstrEvents(): Observable<Event[]> {
-    event: Observable<Any> = this.indexService.getEvents();
+    let event: Observable<Event> = this.indexService.getEvents();
 
     return new Promise(resolve => {
       this.indexService.getPlayers(event.players)
