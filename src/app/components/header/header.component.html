@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="main-tab">
+        <a class="logo" routerLink="/index">
+            <img src="../../../assets/img/logo_header.png">
+        </a>
+        <nav>
+            <a routerLink="/event">Evenements</a>
+            <a routerLink="/group">Groupe</a>
+        </nav>
+        <div class="show-option">
+            <div class="search clickable-option">
+                <i class="fas fa-search"></i>
+            </div>
+            <a routerLink="/profil">
+                <div class="user clickable-option">
+                    <i class="fas fa-user"></i>
+                </div>
+            </a>
+            <div class="log clickable-option">
+                <a routerLink="/login">
+                    <i class="fas fa-sign-in-alt"></i>
+                </a>
+                <a routerLink="/logout">
+                    <i class="fas fa-sign-out-alt hidden"></i>
+                </a>
+            </div>
+            <div class="nav-btn clickable-option" (click)="SwitchOptions()"
+                 [class.selected-btn]="OptionsShowed === true">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </div>
+    <div class="option">
+        <form class="search" [class.hidden]="OptionsShowed === true">
+            <input type="text" placeholder="Search.." name="search">
+            <i class="fas fa-search"></i>
+        </form>
+        <nav [class.hidden]="OptionsShowed === true">
+            <a routerLink="/event">Evenements</a>
+            <a routerLink="/group">Groupe</a>
+        </nav>
+    </div>
+</div>

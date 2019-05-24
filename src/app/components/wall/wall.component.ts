@@ -1,15 +1,15 @@
 import {Component, OnInit} from '@angular/core';
-import { Event, Player } from './models/BasicClasses';
-import {IndexService} from './services/index.service';
+import { Event, Player } from '@/models/BasicClasses';
+import {IndexService} from '@/services/index.service';
 import {Observable} from 'rxjs';
 
-
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-wall',
+  templateUrl: './wall.component.html',
+  styleUrls: ['./wall.component.css']
 })
-export class AppComponent {
+export class WallComponent implements OnInit {
+
     title = 'sporttribe-server';
     Events: Event[] = [];
     user: Player;
@@ -34,5 +34,5 @@ export class AppComponent {
             this.cstrEvents();
         });
     }
-}
 
+}

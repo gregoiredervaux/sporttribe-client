@@ -1,28 +1,18 @@
-DOCTYPE html>
-<html>
-<head>
-  <app-head></app-head>
-</head>
-<body>
 <header>
-  <app-header></app-header>
+    <app-header></app-header>
 </header>
 
-<nav class="main">
-  <ul *ngFor="">
-    <li>{{sport_icon}}</li>
-  </ul>
+<alert></alert>
+<nav class="main" *ngIf="sport_icon">
+    <ul *ngFor="">
+        <li>{{sport_icon}}</li>
+    </ul>
 </nav>
-<main *ngFor="let event of Events">
-  <app-event [Event]="event"></app-event>
+<main>
+    <router-outlet></router-outlet>
 </main>
-
 <footer>
-  <% include ./partial/footer.ejs %>
+    <app-footer></app-footer>
 </footer>
-</body>
-<% include ./partial/script_index.ejs %>
-</html>
 
 
-<router-outlet></router-outlet>

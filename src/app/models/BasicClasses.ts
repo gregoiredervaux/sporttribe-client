@@ -8,7 +8,7 @@ export class Event {
         date: string,
         description: string,
         location: Observable<Location>,
-        players: Array<number>,
+        players: Observable<Player[]>,
         opened: boolean,
         creator_id: number,
         captain_id: number
@@ -43,7 +43,7 @@ export class Location {
   sport_available: Array<number>;
 }
 
-export class User {
+export class Player {
   id: number;
   first_name: string;
   last_name: string;
