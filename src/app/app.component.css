@@ -2,7 +2,6 @@
 **************GRID*****************
 ***********************************/
 
-
 body {
   display: grid;
   grid-template: auto auto auto auto auto / 5vw 2fr 3fr 3fr 5vw;
@@ -51,8 +50,6 @@ footer {
   }
 }
 
-
-
 /*computer*/
 @media screen  and (min-width:1280px) and (min-aspect-ratio:16/9){
 
@@ -78,4 +75,3 @@ footer {
 @media screen  and (min-width:1280px){
 
 }
-
